@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "X509.Cli": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
