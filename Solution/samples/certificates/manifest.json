@@ -1,0 +1,58 @@
+[
+  {
+    "name": "rsa-root-ca",
+    "description": "Self-signed RSA root CA with private key, CA basic constraints and certificate signing key usage.",
+    "privateCertificatePath": "D:\\Repos\\x509-metadata-dotnet\\Solution\\samples\\certificates\\rsa-root-ca.pfx",
+    "publicCertificatePath": "D:\\Repos\\x509-metadata-dotnet\\Solution\\samples\\certificates\\rsa-root-ca.cer",
+    "password": "test-password"
+  },
+  {
+    "name": "rsa-intermediate-ca",
+    "description": "RSA intermediate CA signed by the root CA with a different issuer and path length constraint.",
+    "privateCertificatePath": "D:\\Repos\\x509-metadata-dotnet\\Solution\\samples\\certificates\\rsa-intermediate-ca.pfx",
+    "publicCertificatePath": "D:\\Repos\\x509-metadata-dotnet\\Solution\\samples\\certificates\\rsa-intermediate-ca.cer",
+    "password": "test-password"
+  },
+  {
+    "name": "rsa-server-with-san",
+    "description": "RSA server certificate with private key, SAN DNS/IP/URI/email/UPN, server EKU and key usage.",
+    "privateCertificatePath": "D:\\Repos\\x509-metadata-dotnet\\Solution\\samples\\certificates\\rsa-server-with-san.pfx",
+    "publicCertificatePath": "D:\\Repos\\x509-metadata-dotnet\\Solution\\samples\\certificates\\rsa-server-with-san.cer",
+    "password": "test-password"
+  },
+  {
+    "name": "rsa-client-auth",
+    "description": "RSA client authentication certificate with private key, client EKU, email and UPN SAN entries.",
+    "privateCertificatePath": "D:\\Repos\\x509-metadata-dotnet\\Solution\\samples\\certificates\\rsa-client-auth.pfx",
+    "publicCertificatePath": "D:\\Repos\\x509-metadata-dotnet\\Solution\\samples\\certificates\\rsa-client-auth.cer",
+    "password": "test-password"
+  },
+  {
+    "name": "rsa-code-signing",
+    "description": "RSA code signing certificate with private key, code signing EKU and digital signature usage.",
+    "privateCertificatePath": "D:\\Repos\\x509-metadata-dotnet\\Solution\\samples\\certificates\\rsa-code-signing.pfx",
+    "publicCertificatePath": "D:\\Repos\\x509-metadata-dotnet\\Solution\\samples\\certificates\\rsa-code-signing.cer",
+    "password": "test-password"
+  },
+  {
+    "name": "rsa-expired-server",
+    "description": "Expired RSA server certificate to validate NotBefore, NotAfter and IsCurrentlyValidUtc.",
+    "privateCertificatePath": "D:\\Repos\\x509-metadata-dotnet\\Solution\\samples\\certificates\\rsa-expired-server.pfx",
+    "publicCertificatePath": "D:\\Repos\\x509-metadata-dotnet\\Solution\\samples\\certificates\\rsa-expired-server.cer",
+    "password": "test-password"
+  },
+  {
+    "name": "ecdsa-client-auth",
+    "description": "Self-signed ECDSA P-256 client certificate with private key and client authentication EKU.",
+    "privateCertificatePath": "D:\\Repos\\x509-metadata-dotnet\\Solution\\samples\\certificates\\ecdsa-client-auth.pfx",
+    "publicCertificatePath": "D:\\Repos\\x509-metadata-dotnet\\Solution\\samples\\certificates\\ecdsa-client-auth.cer",
+    "password": "test-password"
+  },
+  {
+    "name": "rsa-minimal",
+    "description": "Minimal RSA certificate with no explicit extensions, useful for empty extension scenarios.",
+    "privateCertificatePath": "D:\\Repos\\x509-metadata-dotnet\\Solution\\samples\\certificates\\rsa-minimal.pfx",
+    "publicCertificatePath": "D:\\Repos\\x509-metadata-dotnet\\Solution\\samples\\certificates\\rsa-minimal.cer",
+    "password": "test-password"
+  }
+]

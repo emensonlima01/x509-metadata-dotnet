@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="X509.Cli/X509.Cli.csproj" />
+  <Project Path="X509.Core/X509.Core.csproj" />
 </Solution>
