@@ -249,7 +249,7 @@ public sealed class CertificateMetadataBuilder
                 Oid = extension.Oid?.Value ?? string.Empty,
                 FriendlyName = extension.Oid?.FriendlyName,
                 Critical = extension.Critical,
-                FormattedValue = extension.Format(multiLine: true),
+                FormattedValue = extension.Format(multiLine: false),
                 RawDataBase64 = Convert.ToBase64String(extension.RawData)
             })
             .ToArray();
