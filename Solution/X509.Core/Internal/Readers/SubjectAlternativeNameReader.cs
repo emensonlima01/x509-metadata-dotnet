@@ -1,9 +1,9 @@
 using System.Formats.Asn1;
 using System.Net;
 using System.Security.Cryptography.X509Certificates;
-using X509.Core.Models;
+using X509.Core.Metadata;
 
-namespace X509.Core.Readers;
+namespace X509.Core.Internal.Readers;
 
 internal static class SubjectAlternativeNameReader
 {

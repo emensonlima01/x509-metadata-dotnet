@@ -1,6 +1,6 @@
-using X509.Core.Models;
+using X509.Core.Metadata;
 
-namespace X509.Core.Contracts;
+namespace X509.Core.Extractors;
 
 public interface ICertificateMetadataExtractor
 {

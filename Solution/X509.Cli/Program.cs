@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
 using System.Text;
 using System.Text.Encodings.Web;
-using X509.Core.Services;
+using X509.Core.Builders;
 
 const string certificatePath = @"D:\Repos\x509-metadata-dotnet\Solution\samples\certificates\rsa-server-with-san.pfx";
 const string? password = "test-password";
@@ -15,9 +15,10 @@ if (!File.Exists(certificatePath))
 }
 
 var certificateBytes = File.ReadAllBytes(certificatePath);
-var extractor = new CertificateMetadataExtractor();
-
-var metadata = extractor.Extract(certificateBytes, password);
+var metadata = CertificateMetadataBuilder
+    .FromBytes(certificateBytes, password)
+    .WithAll()
+    .Build();
 
 var json = JsonSerializer.Serialize(metadata, new JsonSerializerOptions
 {
