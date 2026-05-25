@@ -14,8 +14,10 @@ public sealed class CertificateMetadataExtractor : ICertificateMetadataExtractor
 
         using X509Certificate2 certificate = LoadCertificate(certificateBytes, password);
 
-        var builder = new CertificateMetadataBuilder(certificate);
-        return builder.Build();
+        return CertificateMetadataBuilder
+            .FromCertificate(certificate)
+            .WithAllMetadata()
+            .Build();
     }
 
     private static X509Certificate2 LoadCertificate(byte[] certificateBytes, string? password)
