@@ -144,8 +144,12 @@ Or from inside the `Solution` folder:
 dotnet build Solution.slnx
 ```
 
-## Notes
+## References
 
-- The package is not published to NuGet yet.
-- The public API receives `byte[]` instead of exposing `X509Certificate2`.
-- The `Internal` namespace contains implementation details and should not be consumed directly.
+- [RFC 5280 - Internet X.509 Public Key Infrastructure Certificate and CRL Profile](https://www.rfc-editor.org/rfc/rfc5280)
+- [Microsoft Learn - X509Certificate2](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.x509certificates.x509certificate2)
+- [Microsoft Learn - X509CertificateLoader](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.x509certificates.x509certificateloader)
+- [Microsoft Learn - X509CertificateLoader.LoadPkcs12](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.x509certificates.x509certificateloader.loadpkcs12)
+- [Microsoft Learn - X509Extension](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.x509certificates.x509extension)
+- [Microsoft Learn - SubjectAlternativeNameBuilder](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.x509certificates.subjectalternativenamebuilder)
+- [Microsoft Learn - AsnReader](https://learn.microsoft.com/en-us/dotnet/api/system.formats.asn1.asnreader)
